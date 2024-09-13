@@ -16,13 +16,21 @@ for i in range(5): # Nastauje maximální počet kol od 0-4
     d += 3 # Každé kolo přičítá o 3 navíc
     print(d) #8 Úkol - Vyhodí nám zpátky výsledek.
 
-while True:
-    try:
-        vek2 = int(input("Uveďte věk: "))# input, který je limitován jen na číslice pomocí int.
-        print("Děkuji") # Vypisuje děkuji po správné hodnotě.
-        break # Pokud byl věk správný, tak ukončí while.
-    if vek2 = False
-    
-    except ValueError:
-    print(Zadej jen celočíselnou hodnotu.)
+def kontrola_veku():
+    while True:  # Smyčka, která nepřestane dokud není zadaný věk správný
+        vek1 = input("Zadejte váš věk: ")
+        
+        if vek1.isdigit():  # Kontrola toho jestli je zadaný věk v číselném formátě.
+            print("Děkuji")
+            break  # Ukončí smyčku jestli-že byl věk zadán správně.
+        else:
+            print("Zadej jen celočíselnou hodnotu.")
 
+kontrola_veku() #9 Úkol - Konec
+
+import random  # Import knihovny pro náhodné čísla
+
+random = random.randint(1, 10) # Náhodné číslo od 1-10
+
+# Výpis náhodné hodnoty do konzole
+print("Náhodné číslo od 1 do 10 je:", random)
