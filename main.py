@@ -1,3 +1,5 @@
+import random  # Import knihovny pro náhodné čísla
+
 a = "Michal" # 1 Úkol - Proměnná, která vyjadřuje jméno.
 b = "Polach" # 2 Úkol - Proměnná, která vyjadřuje příjmení.
 print(a + " " + b) #3 Úkol + mezera mezi jmény
@@ -27,8 +29,6 @@ def kontrola_veku():
             print("Zadej jen celočíselnou hodnotu.")
 
 kontrola_veku() #9 Úkol - Konec
-
-import random  # Import knihovny pro náhodné čísla
 
 random = random.randint(1, 10) # Náhodné číslo od 1-10
 
